@@ -1,32 +1,49 @@
 /*
-Custom variables
+Theme variables
 ==================================================
 Contains custom non bootstrap variables.
 */
 
-$search-suggest-zindex: 1000 !default;
-$offcanvas-zindex: 1050 !default;
-$cookie-msg-zindex: 1100 !default;
-$scroll-up-zindex: 700 !default;
-$menu-flyout-zindex: 750 !default;
-$zoom-modal-action-zindex: 1051 !default;
-$magnifier-overlay-zindex: 1100 !default;
+//=====> Assets <=====//
+//$lfl-asset-path: '/bundles/fwpmlfltheme/storefront/assets';//
 
-$icon-base-size: 22px !default;
-$icon-base-color: #4a545b !default;
-$icon-review-color: #fedc70 !default;
+//======> Typography <====== //
+$lfl-font-family: 1;
 
-$progress-bar-review: $icon-review-color !default;
+// font weights
+$lfl-font-weight-light: 300;
+$lfl-font-weight-regular: 400;
+$lfl-font-weight-medium: 500;
+$lfl-font-weight-semi-bold: 600;
+$lfl-font-weight-bold: 700;
+$lfl-font-weight-extra-bold: 800;
 
-$element-backdrop-bg: rgba(#fff, 0.5) !default;
+//font settings
+$lfl-font-size-xs:8;
+$lfl-font-size-sm:12;
+$lfl-font-size-md:14;
+$lfl-font-size-lg:21;
+$lfl-font-size-xl:28;
+$lfl-font-size-xxl:36;
 
-$spacer-xs: ( $spacer * 0.25 ) !default;
-$spacer-sm: ( $spacer * 0.5 ) !default;
-$spacer-md: $spacer !default;
-$spacer-lg: ( $spacer * 1.5 ) !default;
-$spacer-xl: ( $spacer * 3 ) !default;
-$sw-asset-theme-url: '' !default;
-$sw-features: () !default;
+// p font size
+$lfl-font-size-p: $lfl-font-size-md;
 
-$theme-id: '' !default;
-$app-css-relative-asset-path: '../../' + $theme-id + '/assets' !default;
+//headlines
+$lfl-font-size-h1: 38px;
+$lfl-font-size-h2: 30px;
+$lfl-font-size-h3: 24px;
+$lfl-font-size-h4: 20px;
+$lfl-font-size-h5: 14px;
+$lfl-font-size-h6: 12px;
+
+//headlines small
+$lfl-font-size-h1-small: 28px;
+$lfl-font-size-h2-small: 23px;
+$lfl-font-size-h3-small: 18px;
+$lfl-font-size-h4-small: 16px;
+
+// line-heights:
+$lfl-line-heigth-p: 1.4;
+$lfl-line-height-h: 1.2;
+
