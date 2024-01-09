@@ -18,5 +18,72 @@
   "asset": [
     "@Storefront",
     "app/storefront/src/assets"
-  ]
+  ],
+  "config": {
+    "blocks": {
+      "exampleBlock": {
+        "label": {
+          "en-GB": "Example block",
+          "de-DE": "Beispiel Block"
+        }
+      }
+    },
+    "sections": {
+      "exampleSection": {
+        "label": {
+          "en-GB": "Example section",
+          "de-DE": "Beispiel Sektion"
+        }
+      }
+    },
+    "fields": {
+      "my-multi-select-field": {
+        "label": {
+          "en-GB": "Select some colours",
+          "de-DE": "Wähle Farben aus"
+        },
+        "type": "text",
+        "editable": true,
+        "value": [
+          "green",
+          "blue"
+        ],
+        "custom": {
+          "componentName": "sw-multi-select",
+          "options": [
+            {
+              "value": "green",
+              "label": {
+                "en-GB": "green",
+                "de-DE": "grün"
+              }
+            },
+            {
+              "value": "red",
+              "label": {
+                "en-GB": "red",
+                "de-DE": "rot"
+              }
+            },
+            {
+              "value": "blue",
+              "label": {
+                "en-GB": "blue",
+                "de-DE": "blau"
+              }
+            },
+            {
+              "value": "yellow",
+              "label": {
+                "en-GB": "yellow",
+                "de-DE": "gelb"
+              }
+            }
+          ]
+        },
+        "block": "exampleBlock",
+        "section": "exampleSection"
+      }
+    }
+  }
 }
