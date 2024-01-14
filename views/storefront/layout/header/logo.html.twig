@@ -1,8 +1,21 @@
 {% block layout_header_logo_inner %}
+{% set path = app.request.pathinfo %}
+
     <div class="header-logo-main">
         {% block layout_header_logo_link %}
             <a class="header-logo-main-link"
-               href="{{ path('frontend.home.page') }}"
+            {% if path starts with '/herren/' %}
+                href="/herren"
+            {% elseif path == '/herren' %}
+                href="{{ path('frontend.home.page') }}"
+            {% elseif path starts with '/damen/' %}
+                href="/damen"
+            {% elseif path == '/damen' %}
+                href="{{ path('frontend.home.page') }}"
+            {% else %}
+                href="{{ path('frontend.home.page') }}"
+            {% endif %}
+
                title="{{ "header.logoLink"|trans|striptags }}">
                 {% block layout_header_logo_image %}
                     <picture class="header-logo-picture">
