@@ -1,18 +1,21 @@
 {% sw_extends '@Storefront/storefront/layout/header/logo.html.twig' %}
 {% block layout_header_logo_inner %}
-{% set activePathId = page.header.navigation.active.id %}
+{% set activePathId = page.header.navigation.active.path %}
 {% set activeNavigationId = page.navigationId %}
 {% set HerrenKat = "018cef9625ca795babed2915f9e73dbe" %}
 {% set DamenKat = "018cef9632e37c41a2b53240dd5d69b1" %}
+{% set UnisexKat = "018d08c7787b70a68767b7003b0ee568" %}
 
 
     <div class="header-logo-main">
         {% block layout_header_logo_link %}
             <a class="header-logo-main-link"
-            {% if activePathId == HerrenKat && activeNavigationId != HerrenKat %}
+            {% if HerrenKat in activePathId && activeNavigationId != HerrenKat %}
                 href="{{ seoUrl('frontend.navigation.page', {'navigationId': HerrenKat}) }}"
-            {% elseif activePathId == DamenKat && activeNavigationId != DamenKat %}
+            {% elseif DamenKat in activePathId && activeNavigationId != DamenKat %}
                 href="{{ seoUrl('frontend.navigation.page', {'navigationId': DamenKat}) }}"
+            {% elseif UnisexKat in activePathId && activeNavigationId != UnisexKat %}
+                href="{{ seoUrl('frontend.navigation.page', {'navigationId': UnisexKat}) }}"
             {% else %}
                 href="{{ path('frontend.home.page') }}"
             {% endif %}

@@ -1,4 +1,8 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+
+
 {% block layout_header %}
+{{ dump() }}
     {% block layout_top_bar %}
         {% sw_include '@Storefront/storefront/layout/header/top-bar.html.twig' %}
     {% endblock %}
@@ -6,13 +10,13 @@
     {% block layout_header_navigation %}
         <div class="row align-items-center header-row">
             {% block layout_header_logo %}
-                <div class="col-12 col-lg-auto header-logo-col">
+                <div class="col-12 col-lg-auto header-logo-col ">
                     {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
                 </div>
             {% endblock %}
 
             {% block layout_header_search %}
-                <div class="col-12 order-2 col-sm order-sm-1 header-search-col">
+                <div class="col-12 col-sm header-search-col order-2 order-sm-1">
                     <div class="row">
                         <div class="col-sm-auto d-none d-sm-block d-lg-none">
                             {% block layout_header_navigation_toggle_tablet %}
