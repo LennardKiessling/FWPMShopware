@@ -1,17 +1,16 @@
+{% sw_extends '@Storefront/storefront/layout/header/logo.html.twig' %}
 {% block layout_header_logo_inner %}
-{% set path = app.request.pathinfo %}
+{% set activePathId = page.header.navigation.active.id %}
+{% set activeNavigationId = page.navigationId %}
+
 
     <div class="header-logo-main">
         {% block layout_header_logo_link %}
             <a class="header-logo-main-link"
-            {% if path starts with '/herren/' %}
-                href="/herren"
-            {% elseif path == '/herren' %}
-                href="{{ path('frontend.home.page') }}"
-            {% elseif path starts with '/damen/' %}
-                href="/damen"
-            {% elseif path == '/damen' %}
-                href="{{ path('frontend.home.page') }}"
+            {% if activePathId == "018cef9625ca795babed2915f9e73dbe" && activeNavigationId != "018cef9625ca795babed2915f9e73dbe" %}
+                href="/Herren/"
+            {% elseif activePathId == "018cef9632e37c41a2b53240dd5d69b1" && activeNavigationId != "018cef9632e37c41a2b53240dd5d69b1" %}
+                href="/Damen/"
             {% else %}
                 href="{{ path('frontend.home.page') }}"
             {% endif %}
