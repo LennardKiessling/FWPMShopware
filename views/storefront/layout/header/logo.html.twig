@@ -2,15 +2,17 @@
 {% block layout_header_logo_inner %}
 {% set activePathId = page.header.navigation.active.id %}
 {% set activeNavigationId = page.navigationId %}
+{% set HerrenKat = "018cef9625ca795babed2915f9e73dbe" %}
+{% set DamenKat = "018cef9632e37c41a2b53240dd5d69b1" %}
 
 
     <div class="header-logo-main">
         {% block layout_header_logo_link %}
             <a class="header-logo-main-link"
-            {% if activePathId == "018cef9625ca795babed2915f9e73dbe" && activeNavigationId != "018cef9625ca795babed2915f9e73dbe" %}
-                href="/Herren/"
-            {% elseif activePathId == "018cef9632e37c41a2b53240dd5d69b1" && activeNavigationId != "018cef9632e37c41a2b53240dd5d69b1" %}
-                href="/Damen/"
+            {% if activePathId == HerrenKat && activeNavigationId != HerrenKat %}
+                href="{{ seoUrl('frontend.navigation.page', {'navigationId': HerrenKat}) }}"
+            {% elseif activePathId == DamenKat && activeNavigationId != DamenKat %}
+                href="{{ seoUrl('frontend.navigation.page', {'navigationId': DamenKat}) }}"
             {% else %}
                 href="{{ path('frontend.home.page') }}"
             {% endif %}
