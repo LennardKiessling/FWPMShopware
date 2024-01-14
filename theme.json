@@ -20,6 +20,20 @@
     "app/storefront/src/assets"
   ],
   "config": {
+    "tabs": {
+      "sizes": {
+          "label": {
+              "en-GB": "Sizesettings",
+              "de-DE": "Größeneinstellungen"
+          }
+      },
+      "general-settings": {
+        "label": {
+            "en-GB": "General Settings",
+            "de-DE": "Allgemeine Einstellungen"
+        }
+    } 
+    },
     "fields": {
       "site-max-width": {
         "label": {
@@ -28,7 +42,18 @@
         },
         "type": "text",
         "value": "100%",
-        "editable": true
+        "editable": true,
+        "tab": "sizes"
+      },
+      "display-home-button": {
+        "label":{
+          "en-GB": "Width of the Website",
+          "de-DE": "Breite der Website"
+        },
+        "type": "switch",
+        "value": false,
+        "editable": true,
+        "tab": "general-settings"
       }
     }
   }
