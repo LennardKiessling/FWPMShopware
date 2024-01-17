@@ -18,6 +18,9 @@ General styling for cms sections
 
     .cms-section-sidebar {
         display: flex;
+
+        // Versuch Sidebar content in Rows darzustellen
+            flex-direction: row;   
     }
 }
 
