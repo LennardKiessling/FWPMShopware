@@ -119,7 +119,7 @@ specific styling for elements dependent on their parent block
 @include media-breakpoint-up(lg) {
     .cms-block-container {
         .cms-block-container-row.has--sidebar {
-            flex-direction: row;
+            flex-direction: column;
 
             > div {
                 flex-basis: auto;
