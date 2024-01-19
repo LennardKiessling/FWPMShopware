@@ -115,10 +115,19 @@ specific styling for elements dependent on their parent block
         height: 100%;
     }
 }
+/* Änderung von Column zu Row von image-three-column Bildergalerien*/
+@include media-breakpoint-up(lg) { 
+    .cms-block-container {
+        .cms-block-container-row.has--sidebar.image-three-column-is-row{
+                flex-direction: row;
+            }
+}
+}
 
 @include media-breakpoint-up(lg) {
     .cms-block-container {
         .cms-block-container-row.has--sidebar {
+            
             flex-direction: column;
 
             > div {
@@ -127,6 +136,12 @@ specific styling for elements dependent on their parent block
                 max-width: 100%;
             }
         }
+    }
+}
+/* Sections auf 50% breite */
+@include media-breakpoint-up(lg) {
+    .sections-width-50 {
+        width: 50%;
     }
 }
 

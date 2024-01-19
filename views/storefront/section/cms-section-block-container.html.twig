@@ -68,7 +68,7 @@
                  style="{% if padding %}padding: {{ padding }};{% endif %}">
 
                 {% block section_content_block_row %}
-                    <div class="cms-block-container-row row cms-row {{ sidebarClasses }}">
+                    <div class="cms-block-container-row row cms-row {{ sidebarClasses }} image-three-column-is-row">
                         {% sw_include "@Storefront/storefront/block/cms-block-" ~ block.type ~ ".html.twig" ignore missing %}
                     </div>
                 {% endblock %}
