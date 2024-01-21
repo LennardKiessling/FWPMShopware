@@ -54,6 +54,26 @@
         "value": false,
         "editable": true,
         "tab": "general-settings"
+      },
+      "border-radius-product-box": {
+        "label":{
+          "en-GB": "Border Radius of the product box",
+          "de-DE": "Rundung des Rahmens der Produktbox"
+        },
+        "type": "text",
+        "value": "10px",
+        "editable": true,
+        "tab": "sizes"
+      },
+      "$padding-product-box": {
+        "label":{
+          "en-GB": "padding of the product box",
+          "de-DE": "Innenabstand der Produktbox"
+        },
+        "type": "text",
+        "value": "0px",
+        "editable": true,
+        "tab": "sizes"
       }
     }
   }
