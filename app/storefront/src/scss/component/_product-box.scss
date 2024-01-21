@@ -228,11 +228,11 @@ $box-image-height-img: 332px;
 .product-box {
     &.box-image {
         .product-image-wrapper {
-            height: $box-image-height-img;
+            height: 80%;
         }
 
         .product-image {
-            max-height: $box-image-height-img;
+            max-height: 100%;
         }
 
         // box-image uses cover mode for standard display mode
