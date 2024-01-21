@@ -32,6 +32,12 @@
             "en-GB": "General Settings",
             "de-DE": "Allgemeine Einstellungen"
         }
+      },
+      "colors": {
+        "label": {
+            "en-GB": "Colors",
+            "de-DE": "Farbeinstellungen"
+        }
     } 
     },
     "fields": {
@@ -74,6 +80,16 @@
         "value": "0px",
         "editable": true,
         "tab": "sizes"
+      },
+      "border-bottom-color-product-box": {
+        "label":{
+          "en-GB": "Add a border below the product box?",
+          "de-DE":"Fügt einen unteren Rand zur Produktbox hinzu?"
+        },
+        "type": "color",
+        "value": "lightgrey",
+        "editable": true,
+        "tab": "color"
       }
     }
   }

@@ -91,7 +91,7 @@ $box-image-height-img: 332px;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     height: 44px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 18px;
     line-height: 22px;
     overflow: hidden;
@@ -118,7 +118,7 @@ $box-image-height-img: 332px;
 /* stylelint-enable value-no-vendor-prefix, property-no-vendor-prefix */
 
 .product-price-info {
-    margin-top: 10px;
+    margin-top: 0px;
 
     .product-advanced-list-price-wrapper {
         font-weight: $font-weight-normal;
@@ -226,9 +226,13 @@ $box-image-height-img: 332px;
 }
 
 .product-box {
+    
+    border: none;
+    border-bottom: 1px solid $border-bottom-color-product-box;
+
     &.box-image {
         .product-image-wrapper {
-            height: 80%;
+            height: 90%;
         }
 
         .product-image {
@@ -239,6 +243,12 @@ $box-image-height-img: 332px;
         .product-image.is-standard {
             height: 100%;
             object-fit: cover;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 }

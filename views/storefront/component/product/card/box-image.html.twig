@@ -2,3 +2,25 @@
 
 {% block component_product_box_description %}{% endblock %}
 {% block component_product_box_wishlist_action %}{% endblock %}
+
+{% block component_product_box_info %}
+                        <div class="product-info">
+                            {% block component_product_box_rating %}{% endblock %}
+
+                            {% block component_product_box_name %}
+                                <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
+                                   class="product-name"
+                                   title="{{ name }}">
+                                    {{ name }}
+                                </a>
+                            {% endblock %}
+
+                            {% block component_product_box_variant_characteristics %}{% endblock %}
+
+                            {% block component_product_box_price %}
+                                {% sw_include '@Storefront/storefront/component/product/card/price-unit.html.twig' %}
+                            {% endblock %}
+
+                            {% block component_product_box_action %}{% endblock %}
+                        </div>
+                    {% endblock %}
