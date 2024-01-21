@@ -12,6 +12,11 @@ Styling for productbox component.
     .card-body {
         padding: $padding-product-box;
     }
+
+    img {
+        border-top-left-radius: $border-radius-product-box;
+        border-top-right-radius: $border-radius-product-box;
+    }
 }
 
 .product-name {

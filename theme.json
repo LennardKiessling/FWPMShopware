@@ -65,7 +65,7 @@
         "editable": true,
         "tab": "sizes"
       },
-      "$padding-product-box": {
+      "padding-product-box": {
         "label":{
           "en-GB": "padding of the product box",
           "de-DE": "Innenabstand der Produktbox"
