@@ -81,10 +81,10 @@
         "editable": true,
         "tab": "sizes"
       },
-      "border-bottom-color-product-box": {
+      "border-color-product-box": {
         "label":{
-          "en-GB": "Add a border below the product box?",
-          "de-DE":"Fügt einen unteren Rand zur Produktbox hinzu?"
+          "en-GB": "Border Color of the Product Box",
+          "de-DE":"Farbe der Border der Product Box"
         },
         "type": "color",
         "value": "lightgrey",

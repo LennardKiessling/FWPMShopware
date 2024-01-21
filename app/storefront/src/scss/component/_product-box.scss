@@ -228,7 +228,7 @@ $box-image-height-img: 332px;
 .product-box {
     
     border: none;
-    border-bottom: 1px solid $border-bottom-color-product-box;
+    border-bottom: 1px solid;
 
     &.box-image {
         .product-image-wrapper {
@@ -249,6 +249,11 @@ $box-image-height-img: 332px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding: 0 10px;
+            
+            .product-listing-description {
+                margin-top: 0;
+            }
         }
     }
 }

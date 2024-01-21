@@ -1,6 +1,5 @@
 {% sw_extends '@Storefront/storefront/component/product/card/box-standard.html.twig' %}
 
-{% block component_product_box_description %}{% endblock %}
 {% block component_product_box_wishlist_action %}{% endblock %}
 
 {% block component_product_box_info %}
@@ -11,7 +10,12 @@
                                 <a href="{{ seoUrl('frontend.detail.page', {'productId': id}) }}"
                                    class="product-name"
                                    title="{{ name }}">
-                                    {{ name }}
+                                    <span>{{ name }}</span>
+                                    {% block component_product_box_description %}
+                                    <span class="product-description product-listing-description">
+                                        {{ product.customFields.custom_listing_product_description|striptags|raw }}
+                                    </span>
+                                    {% endblock %}
                                 </a>
                             {% endblock %}
 
