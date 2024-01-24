@@ -90,6 +90,16 @@
         "value": "lightgrey",
         "editable": true,
         "tab": "color"
+      },
+      "checkout-background-color": {
+        "label":{
+          "en-GB": "Background color of the checkout",
+          "de-DE":"Hintergrundfarbe des Checkouts"
+        },
+        "type": "color",
+        "value": "#E8E8E8",
+        "editable": true,
+        "tab": "color"
       }
     }
   }

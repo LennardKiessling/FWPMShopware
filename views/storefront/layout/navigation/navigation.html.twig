@@ -10,7 +10,7 @@
                         itemscope="itemscope"
                         itemtype="http://schema.org/SiteNavigationElement">
                         {% set homeLabel = context.salesChannel.translated.homeName|default("general.homeLink"|trans) %}
-                        {% set displayHomeButton = shopware.theme.getConfig('display-home-button') %}
+                        {% set displayHomeButton = theme_config('display-home-button') %}
 
 
                         {% block layout_main_navigation_menu_home %}
