@@ -100,6 +100,26 @@
         "value": "#E8E8E8",
         "editable": true,
         "tab": "color"
+      },
+      "checkout-background-elements-color": {
+        "label":{
+          "en-GB": "Background color of the elements used in the checkout",
+          "de-DE":"Hintergrundfarbe der einzelnen Elemente im Checkout"
+        },
+        "type": "color",
+        "value": "#f9f9f9",
+        "editable": true,
+        "tab": "color"
+      },
+      "border-radius-checkout": {
+        "label":{
+          "en-GB": "Border Radius of the checkout elements",
+          "de-DE": "Rundung des Rahmens der Checkout Elemente"
+        },
+        "type": "text",
+        "value": "15px",
+        "editable": true,
+        "tab": "sizes"
       }
     }
   }

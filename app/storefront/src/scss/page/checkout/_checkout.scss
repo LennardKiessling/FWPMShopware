@@ -20,3 +20,38 @@
         }
     }
 }
+
+.checkout-aside-summary, .checkout-aside-products, .register-login-styling {
+    border-radius: $border-radius-checkout;
+    background-color: $checkout-background-elements-color;
+}
+
+.checkout-aside-products{
+    margin-top: 1rem;
+}
+
+.register-login-styling, .register-personal, .card-title {
+    padding: 1rem;
+}
+
+.card-title {
+    margin: 1rem 0 0 0;
+    background-color: $checkout-background-elements-color;
+    border-top-right-radius: $border-radius-checkout;
+    border-top-left-radius: $border-radius-checkout;
+}
+
+.register-personal {
+    background-color: $checkout-background-elements-color;
+    border-bottom-left-radius: $border-radius-checkout;
+    border-bottom-right-radius: $border-radius-checkout;
+}
+
+.register-address {
+    .card-title {
+        padding: 0 0 10px 0;
+    }
+    padding: 1rem;
+    background-color: $checkout-background-elements-color;
+    border-radius: $border-radius-checkout;
+}
