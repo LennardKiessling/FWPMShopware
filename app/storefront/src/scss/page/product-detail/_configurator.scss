@@ -95,7 +95,7 @@
     // keine Border für checked
     &:checked + .product-detail-configurator-option-label {
         border: none;
-        transform: scale(1,1.3); 
+        transform: scale(1.2,1.2);
         // Groessen nur Buchstaben in schwarz
         &.is-display-text {
             background-color: #fff;
@@ -120,11 +120,16 @@
         &:active,
         &:focus {
             border: none;
-            transform: scale(1,1.3); 
+            transform: scale(1.2,1.2) 
         }
     }
 }
-
+/**
 .product-detail-configurator-option-image {
+    height: 100%;
+}
+**/
+.product-detail-configurator-option-image {
+    border-radius: 50%;
     height: 100%;
 }
