@@ -147,8 +147,14 @@ specific styling for elements dependent on their parent block
 }
 /* Sections auf 50% breite */
 @include media-breakpoint-up(lg) {
-    .sections-width-50 {
-        width: 50%;
+    .sections-width-80 {
+        width: 80%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .sections-width-20 {
+        width: 20%;
     }
 }
 
