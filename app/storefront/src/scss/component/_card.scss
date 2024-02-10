@@ -12,6 +12,7 @@ https://getbootstrap.com/docs/5.2/components/card
     font-size: $font-size-lg;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
+    background-color: $account-card-title-background-color;
 }
 
 // equal height cards
@@ -21,6 +22,7 @@ https://getbootstrap.com/docs/5.2/components/card
 
     .card {
         width: 100%;
+        background-color: $account-card-background-color;
     }
 
     .card-body {
