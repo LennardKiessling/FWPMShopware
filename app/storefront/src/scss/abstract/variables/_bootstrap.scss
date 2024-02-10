@@ -8,3 +8,20 @@ https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults
 
 // Grid containers
 $container-max-widths: ( xs: $site-max-width );
+
+
+// Typography
+
+$font-size-base: $LFL-font-size-base;
+$font-size-lg: $LFL-font-size-lg;
+$font-size-sm: $LFL-font-size-sm;
+$font-weight-normal: $LFL-font-weight-normal;
+
+$h1-font-size: $LFL-h1-font-size;
+$h2-font-size: $LFL-h2-font-size;
+$h3-font-size: $LFL-h3-font-size;
+$h4-font-size: $LFL-h4-font-size;
+$h5-font-size: $LFL-h5-font-size;
+$h6-font-size: $LFL-h6-font-size;
+
+$headings-font-weight: $LFL-headings-font-weight;

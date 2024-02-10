@@ -20,6 +20,7 @@
     "app/storefront/src/assets"
   ],
   "config": {
+
     "tabs": {
       "sizes": {
           "label": {
@@ -40,6 +41,20 @@
         }
     } 
     },
+
+    "blocks": {
+      "sizes": {
+        "fontSizes": {
+          "en-GB": "Font Sizes",
+          "de-DE": "Schriftgrößen"
+        },
+        "fontWeights": {
+          "en-GB": "Font Weight",
+          "de-DE": "Schriftstärke"
+        }
+      }
+    },
+
     "fields": {
       "site-max-width": {
         "label": {
@@ -160,6 +175,127 @@
         "value": "#E8E8E8",
         "editable": true,
         "tab": "color"
+      },
+      "LFL-h1-font-size": {
+        "label":{
+          "en-GB": "Font size of h1",
+          "de-DE": "Schriftgröße H1 Überschrift"
+        },
+        "type": "text",
+        "value": "36px",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-h2-font-size": {
+        "label":{
+          "en-GB": "Font size of h2",
+          "de-DE": "Schriftgröße H2 Überschrift"
+        },
+        "type": "text",
+        "value": "28px",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-h3-font-size": {
+        "label":{
+          "en-GB": "Font size of h3",
+          "de-DE": "Schriftgröße H3 Überschrift"
+        },
+        "type": "text",
+        "value": "24px",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-h4-font-size": {
+        "label":{
+          "en-GB": "Font size of h4",
+          "de-DE": "Schriftgröße H4 Überschrift"
+        },
+        "type": "text",
+        "value": "20px",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-h5-font-size": {
+        "label":{
+          "en-GB": "Font size of h5",
+          "de-DE": "Schriftgröße H5 Überschrift"
+        },
+        "type": "text",
+        "value": "16px",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-h6-font-size": {
+        "label":{
+          "en-GB": "Font size of h6",
+          "de-DE": "Schriftgröße H6 Überschrift"
+        },
+        "type": "text",
+        "value": "14px",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-font-size-base": {
+        "label":{
+          "en-GB": "Font size of base",
+          "de-DE": "Schriftgröße Basis"
+        },
+        "type": "text",
+        "value": "0.875rem",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-font-size-lg": {
+        "label":{
+          "en-GB": "Font size of large",
+          "de-DE": "Schriftgröße Groß"
+        },
+        "type": "text",
+        "value": "1rem",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-font-size-sm": {
+        "label":{
+          "en-GB": "Font size small",
+          "de-DE": "Schriftgröße klein"
+        },
+        "type": "text",
+        "value": "0.75rem",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontSizes"
+      },
+      "LFL-font-weight-normal": {
+        "label":{
+          "en-GB": "Font weight normal",
+          "de-DE": "Schriftstärke normal"
+        },
+        "type": "text",
+        "value": "400",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontWeights"
+      },
+      "LFL-headings-font-weight": {
+        "label":{
+          "en-GB": "Font weight headings",
+          "de-DE": "Schriftstärke Überschriften"
+        },
+        "type": "text",
+        "value": "700",
+        "editable": true,
+        "tab": "sizes",
+        "block": "fontWeights"
       }
     }
   }
