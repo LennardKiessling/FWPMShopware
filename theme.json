@@ -120,6 +120,46 @@
         "value": "15px",
         "editable": true,
         "tab": "sizes"
+      },
+      "btn-border-radius": {
+        "label":{
+          "en-GB": "Border Radius of the Buttons",
+          "de-DE": "Rundung des Rahmens der Buttons"
+        },
+        "type": "text",
+        "value": "5px",
+        "editable": true,
+        "tab": "sizes"
+      },
+      "card-border-radius": {
+        "label":{
+          "en-GB": "Border Radius of the Account Cards",
+          "de-DE": "Rundung des Rahmens der Account Kartenabschnitte"
+        },
+        "type": "text",
+        "value": "15px",
+        "editable": true,
+        "tab": "sizes"
+      },
+      "account-card-title-background-color": {
+        "label":{
+          "en-GB": "Title background color of the Account Cards",
+          "de-DE": "Titel-Hintergrundfrabe der Account Kartenabschnitte"
+        },
+        "type": "color",
+        "value": "#E8E8E8",
+        "editable": true,
+        "tab": "color"
+      },
+      "account-card-background-color": {
+        "label":{
+          "en-GB": "Background color of the Account Cards",
+          "de-DE": "Hintergrundfrabe der Account Kartenabschnitte"
+        },
+        "type": "color",
+        "value": "#E8E8E8",
+        "editable": true,
+        "tab": "color"
       }
     }
   }

@@ -11,6 +11,7 @@ https://getbootstrap.com/docs/5.2/components/buttons
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    border-radius: $btn-border-radius;
 }
 
 // custom add to cart button, used e.g. in product-box and product detail buybox
@@ -24,6 +25,7 @@ https://getbootstrap.com/docs/5.2/components/buttons
         background: $disabled-btn-bg;
         border-color: $disabled-btn-border-color;
         color: $gray-300;
+        
     }
 }
 

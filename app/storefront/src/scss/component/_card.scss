@@ -26,6 +26,7 @@ https://getbootstrap.com/docs/5.2/components/card
     .card-body {
         display: flex;
         flex-direction: column;
+        border-radius: $card-border-radius;
     }
 }
 
