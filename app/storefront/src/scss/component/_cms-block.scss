@@ -122,11 +122,16 @@ specific styling for elements dependent on their parent block
                 
                 flex-direction: row;
 
+                & img{
+                    transition: transform 0.5s ease-out;
+                }
+
                 & img:hover{
                    transform: scale(1.3);
                    transition: transform 0.5s ease-in-out;
                    z-index: 1;
                 }
+
             }
     }
 }
@@ -145,7 +150,7 @@ specific styling for elements dependent on their parent block
         }
     }
 }
-/* Sections auf 50% breite */
+/* Sections auf 65 35% breite */
 @include media-breakpoint-up(lg) {
     .sections-width-65 {
         width: 65%;
