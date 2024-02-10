@@ -8,42 +8,17 @@ Contains custom non bootstrap variables.
 //$lfl-asset-path: '/bundles/fwpmlfltheme/storefront/assets';//
 
 //======> Typography <====== //
-$lfl-font-family: 1;
 
-// font weights
-$lfl-font-weight-light: 300;
-$lfl-font-weight-regular: 400;
-$lfl-font-weight-medium: 500;
-$lfl-font-weight-semi-bold: 600;
-$lfl-font-weight-bold: 700;
-$lfl-font-weight-extra-bold: 800;
+@font-face {
+    font-family: 'haboronorm_regular';
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+    src: url('/bundles/fwpmlfltheme/font/haboro/haboronormregular-webfont.woff2') format('woff2'),
+         url('/bundles/fwpmlfltheme/font/haboro/haboronormregular-webfont.woff') format('woff');
+}
 
-//font settings
-$lfl-font-size-xs:8;
-$lfl-font-size-sm:12;
-$lfl-font-size-md:14;
-$lfl-font-size-lg:21;
-$lfl-font-size-xl:28;
-$lfl-font-size-xxl:36;
 
-// p font size
-$lfl-font-size-p: $lfl-font-size-md;
-
-//headlines
-$lfl-font-size-h1: 38px;
-$lfl-font-size-h2: 30px;
-$lfl-font-size-h3: 24px;
-$lfl-font-size-h4: 20px;
-$lfl-font-size-h5: 14px;
-$lfl-font-size-h6: 12px;
-
-//headlines small
-$lfl-font-size-h1-small: 28px;
-$lfl-font-size-h2-small: 23px;
-$lfl-font-size-h3-small: 18px;
-$lfl-font-size-h4-small: 16px;
-
-// line-heights:
-$lfl-line-heigth-p: 1.4;
-$lfl-line-height-h: 1.2;
-
+* {
+    font-family: 'haboronorm_regular', sans-serif;
+}
