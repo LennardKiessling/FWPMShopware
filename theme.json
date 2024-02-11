@@ -13,7 +13,8 @@
   ],
   "script": [
     "@Storefront",
-    "app/storefront/dist/storefront/js/fwpm-l-f-l-theme.js"
+    "app/storefront/dist/storefront/js/fwpm-l-f-l-theme.js",
+    "app/storefront/src/main.js"
   ],
   "asset": [
     "@Storefront",
@@ -39,7 +40,13 @@
             "en-GB": "Colors",
             "de-DE": "Farbeinstellungen"
         }
-    } 
+      },
+      "header-settings": {
+        "label": {
+            "en-GB": "Header Settings",
+            "de-DE": "Header und Navi Einstellungen"
+        }
+      }
     },
 
     "blocks": {
@@ -51,6 +58,16 @@
         "fontWeights": {
           "en-GB": "Font Weight",
           "de-DE": "Schriftstärke"
+        }
+      },
+      "header-settings": {
+        "header-colors": {
+          "en-GB": "Header Colors",
+          "de-DE": "Farben Header"
+        },
+        "header-sizes": {
+          "en-GB": "Sizes Header",
+          "de-DE": "Header Größen"
         }
       }
     },
@@ -296,6 +313,28 @@
         "editable": true,
         "tab": "sizes",
         "block": "fontWeights"
+      },
+      "LFL-height-header": {
+        "label":{
+          "en-GB": "Height Header Desktop",
+          "de-DE": "Höhe des Headers Desktop"
+        },
+        "type": "text",
+        "value": "80px",
+        "editable": true,
+        "tab": "header-settings",
+        "block": "header-sizes"
+      },
+      "LFL-background-color-header": {
+        "label":{
+          "en-GB": "Color Header Desktop",
+          "de-DE": "Farbe des Headers Desktop"
+        },
+        "type": "color",
+        "value": "#ffffff",
+        "editable": true,
+        "tab": "header-settings",
+        "block": "header-colors"
       }
     }
   }

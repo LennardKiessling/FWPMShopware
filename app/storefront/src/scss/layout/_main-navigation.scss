@@ -15,4 +15,20 @@ https://getbootstrap.com/docs/5.2/components/navs-tabs
     .main-navigation {
         display: inherit;
     }
+
+    .nav-main {
+        position: -webkit-sticky;
+        position: sticky;
+        top: $LFL-height-header;
+        z-index: 9999; 
+        background-color: #ffffff;
+        border-bottom: 1px solid #000000;
+        background-color: $LFL-background-color-header;
+        transition: 0.3s  ease-in-out;
+    }
+
+    .nav-main.header-hidden{
+        top: 0;
+        transition: 0.3s  ease-in-out;
+    }
 }
