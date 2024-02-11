@@ -335,6 +335,26 @@
         "editable": true,
         "tab": "header-settings",
         "block": "header-colors"
+      },
+      "Navigation-On-Scroll-Desktop": {
+        "label":{
+          "en-GB": "Navigation On Scroll Desktop On/Off",
+          "de-DE": "Navigation beim scrollen Desktop An/Aus"
+        },
+        "type": "switch",
+        "value": "true",
+        "editable": true,
+        "tab": "header-settings"
+      },
+      "Sticky-Navigation-Desktop": {
+        "label":{
+          "en-GB": "Sticky Navigation Desktop On/Off",
+          "de-DE": "Sticky Navigation Desktop An/Aus"
+        },
+        "type": "switch",
+        "value": "true",
+        "editable": true,
+        "tab": "header-settings"
       }
     }
   }
