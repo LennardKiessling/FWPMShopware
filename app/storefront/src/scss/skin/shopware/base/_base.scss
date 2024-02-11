@@ -17,12 +17,13 @@ main {
 }
 
 @include media-breakpoint-up(lg) {
+
     main.sticky-header {
         margin-top: $LFL-height-header;
         transition: 0.3s  ease-in-out;
     }
 
-    main.sticky-header.header-hidden {
+    main, main.sticky-header.header-hidden {
         margin-top: 0;
         transition: 0.3s  ease-in-out;
     }

@@ -16,19 +16,23 @@ https://getbootstrap.com/docs/5.2/components/navs-tabs
         display: inherit;
     }
 
-    .nav-main.sticky-header {
-        position: -webkit-sticky;
-        position: sticky;
-        top: $LFL-height-header;
-        z-index: 9999; 
-        background-color: #ffffff;
-        border-bottom: 1px solid #000000;
-        background-color: $LFL-background-color-header;
-        transition: 0.3s  ease-in-out;
+    div.nav-main {
+        top: -$LFL-height-header;
     }
 
-    .nav-main.sticky-header.header-hidden{
+    .nav-main, .nav-main.sticky-header.header-hidden {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 9999; 
         top: 0;
+        transition: 0.3s  ease-in-out;
+        background-color: $LFL-background-color-header;
+    }
+
+    .nav-main.sticky-header {
+        top: $LFL-height-header;
+        border-bottom: 1px solid #000000;
+        background-color: $LFL-background-color-header;
         transition: 0.3s  ease-in-out;
     }
 }

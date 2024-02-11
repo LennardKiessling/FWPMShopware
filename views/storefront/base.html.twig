@@ -6,7 +6,8 @@
 
         {% block base_header %}
             <script>
-                var navigationOnScroll = {{ navigationOnScroll }};
+                var navigationOnScroll = {{ navigationOnScroll|default('false') }};
+                var stickyNavigation = {{ stickyNavigation|default('false') }};
             </script>
             <header class="header-main {% if stickyNavigation %}sticky-header{% endif %}">
                 {% block base_header_inner %}

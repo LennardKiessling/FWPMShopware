@@ -87,17 +87,19 @@ The header contains the shop logo, the search form and various actions like the 
     .header-logo-col {
         margin: 0;
     }
+
     .header-main.sticky-header {
-        position: fixed;
         top: 0;
         height: $LFL-height-header;
-        width: 100%;
-        z-index: 9999;
-        background-color: $LFL-background-color-header;
         transition: 0.3s  ease-in-out;
     }
-    .header-main.sticky-header.header-hidden {
+
+    .header-main, .header-main.sticky-header.header-hidden {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
         top: -$LFL-height-header;
         transition: 0.3s  ease-in-out;
+        background-color: $LFL-background-color-header;
     }
 }
