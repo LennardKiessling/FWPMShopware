@@ -9,7 +9,7 @@
                 var navigationOnScroll = {{ navigationOnScroll|default('false') }};
                 var stickyNavigation = {{ stickyNavigation|default('false') }};
             </script>
-            <header class="header-main {% if stickyNavigation %}sticky-header{% endif %}">
+            <header class="header-main {% if (stickyNavigation or navigationOnScroll) %}sticky-header{% endif %}">
                 {% block base_header_inner %}
                     <div class="container">
                         {% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}
@@ -19,7 +19,7 @@
         {% endblock %}
 
         {% block base_navigation %}
-            <div class="nav-main {% if stickyNavigation %}sticky-header{% endif %}">
+            <div class="nav-main {% if (stickyNavigation or navigationOnScroll) %}sticky-header{% endif %}">
                 {% block base_navigation_inner %}
                     {% sw_include '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
                 {% endblock %}
@@ -27,7 +27,7 @@
         {% endblock %}
 
         {% block base_main %}
-            <main class="content-main {% if stickyNavigation %}sticky-header{% endif %}">
+            <main class="content-main {% if (stickyNavigation or navigationOnScroll) %}sticky-header{% endif %}">
                 {% block base_flashbags %}
                     <div class="flashbags container">
                         {% for type, messages in app.flashes %}
