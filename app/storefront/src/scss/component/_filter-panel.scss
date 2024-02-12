@@ -12,6 +12,15 @@ This file contains the generic styling for all filter items.
     margin-bottom: 8px;
 }
 
+.filter-panel button, .filter-panel .filter-panel-items-container > div {
+    border-radius: $border-radius-product-box;
+    border: none;
+}
+
+.filter-panel .filter-panel-items-container div {
+    border-radius: $border-radius-product-box;
+}
+
 .icon.icon-filter-panel-item-toggle {
     margin-left: 8px;
 
@@ -33,7 +42,7 @@ This file contains the generic styling for all filter items.
     margin-bottom: 12px;
 
     .filter-panel-item-toggle {
-        border: 1px solid $border-color;
+        border: none;
         font-weight: $font-weight-normal;
     }
 }

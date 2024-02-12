@@ -383,6 +383,62 @@
         "editable": true,
         "tab": "colors",
         "block": "footer-colors"
+      },
+      "background-color-search": {
+        "label":{
+          "en-GB": "Background Color of the Search",
+          "de-DE": "Hintergrundfarbe der Suche"
+        },
+        "type": "color",
+        "value": "#000000",
+        "editable": true,
+        "tab": "colors"
+      },
+      "font-color-search": {
+        "label":{
+          "en-GB": "Font Color of the Search",
+          "de-DE": "Schriftfarbe der Suche"
+        },
+        "type": "color",
+        "value": "#ffffff",
+        "editable": true,
+        "tab": "colors"
+      },
+      "layout-searchpage": {
+        "label":{
+          "en-GB": "Listinglayout of the Searchpage",
+          "de-DE": "Listinglayout der Suchseite"
+        },
+        "type": "text",
+        "value": "image",
+        "custom": {
+          "componentName": "sw-single-select",
+          "options": [
+            {
+              "value": "image",
+              "label": {
+                "en-GB": "Big Image",
+                "de-DE": "Großes Bild"
+              }
+            },
+            {
+              "value": "standard",
+              "label": {
+                "en-GB": "Standard",
+                "de-DE": "Standart"
+              }
+            },
+            {
+              "value": "minimal",
+              "label": {
+                "en-GB": "Minimales Layout",
+                "de-DE": "Minimales Layout"
+              }
+            }
+          ]
+        },
+        "editable": true,
+        "tab": "general-settings"
       }
     }
   }

@@ -1,4 +1,6 @@
+{% sw_extends '@Storefront/storefront/page/search/search-pagelet.html.twig' %}
 {% set listingColumns = 'col-sm-6 col-lg-4 col-xl-3' %}
+{% set layoutSearchpage = theme_config('layout-searchpage') %}
 
 {% block element_product_listing_wrapper %}
     {% sw_include '@Storefront/storefront/element/cms-element-sidebar-filter.html.twig' with {
@@ -12,7 +14,7 @@
         filterUrl: url('widgets.search.filter'),
         params: { search: page.searchTerm },
         sidebar: 0,
-        boxLayout: 'minimal',
+        boxLayout: layoutSearchpage,
         displayMode: ''
     } %}
 {% endblock %}
