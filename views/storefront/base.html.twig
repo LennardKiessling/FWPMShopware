@@ -1,7 +1,15 @@
-
 {% sw_extends '@Storefront/storefront/base.html.twig' %}
 {% set stickyNavigation = theme_config('Sticky-Navigation-Desktop') %}
 {% set navigationOnScroll = theme_config('Navigation-On-Scroll-Desktop') %}
+{% set uvpInHeaderAllow = theme_config('uvp-in-header-allow') %}
+{% set uvpTextInHeaderLeft = theme_config('uvp-text-in-header-left') %}
+{% set uvpIconInHeaderLeft = theme_config('uvp-icon-in-header-left') %}
+{% set uvpTextInHeaderCenter = theme_config('uvp-text-in-header-center') %}
+{% set uvpIconInHeaderCenter = theme_config('uvp-icon-in-header-center') %}
+{% set uvpTextInHeaderRight = theme_config('uvp-text-in-header-right') %}
+{% set uvpIconInHeaderRight = theme_config('uvp-icon-in-header-right') %}
+
+
 
 
         {% block base_header %}
@@ -10,6 +18,13 @@
                 var stickyNavigation = {{ stickyNavigation|default('false') }};
             </script>
             <header class="header-main {% if (stickyNavigation or navigationOnScroll) %}sticky-header{% endif %}">
+                {% if uvpInHeaderAllow %}
+                <div class="uvp">
+                    <span>{% sw_include "@Storefront/storefront/utilities/icon.html.twig" with { 'name': uvpIconInHeaderLeft} %}{{ uvpTextInHeaderLeft }}</span>
+                    <span>{% sw_include "@Storefront/storefront/utilities/icon.html.twig" with { 'name': uvpIconInHeaderCenter} %}{{ uvpTextInHeaderCenter }}</span>
+                    <span>{% sw_include "@Storefront/storefront/utilities/icon.html.twig" with { 'name': uvpIconInHeaderRight} %}{{ uvpTextInHeaderRight }}</span>
+                </div>
+                {% endif %}
                 {% block base_header_inner %}
                     <div class="container">
                         {% sw_include '@Storefront/storefront/layout/header/header.html.twig' %}

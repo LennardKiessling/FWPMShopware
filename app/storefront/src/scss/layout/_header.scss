@@ -71,6 +71,10 @@ The header contains the shop logo, the search form and various actions like the 
     position: relative;
 }
 
+.header-main .uvp {
+    display: none;
+}
+
 @include media-breakpoint-up(sm) {
     .header-row {
         padding-bottom: $spacer;
@@ -104,16 +108,28 @@ The header contains the shop logo, the search form and various actions like the 
 
     .header-main.sticky-header {
         top: 0;
-        height: $LFL-height-header;
         transition: 0.3s  ease-in-out;
     }
 
     .header-main, .header-main.sticky-header.header-hidden {
         position: sticky;
+        height: $LFL-height-header;
         z-index: 999;
         width: 100%;
         top: -$LFL-height-header;
         transition: 0.3s  ease-in-out;
         background-color: $LFL-background-color-header;
+    }
+
+    .header-main .uvp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: $uvp-background-color;
+        color: $uvp-font-color;
+        & .icon {
+            color: $uvp-font-color;
+            margin-right: 5px;
+        }
     }
 }
