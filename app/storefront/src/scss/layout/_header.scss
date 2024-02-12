@@ -95,7 +95,7 @@ The header contains the shop logo, the search form and various actions like the 
     }
 
     .header-main, .header-main.sticky-header.header-hidden {
-        position: fixed;
+        position: sticky;
         z-index: 9999;
         width: 100%;
         top: -$LFL-height-header;

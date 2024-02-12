@@ -85,8 +85,8 @@
       },
       "display-home-button": {
         "label":{
-          "en-GB": "Width of the Website",
-          "de-DE": "Breite der Website"
+          "en-GB": "Display Home Button in Navigation On/Off",
+          "de-DE": "Zeige den Home Button in der Navigation An/Aus"
         },
         "type": "switch",
         "value": false,
@@ -265,7 +265,7 @@
           "de-DE": "Schriftgröße Basis"
         },
         "type": "text",
-        "value": "0.875rem",
+        "value": "1.125rem",
         "editable": true,
         "tab": "sizes",
         "block": "fontSizes"
@@ -276,7 +276,7 @@
           "de-DE": "Schriftgröße Groß"
         },
         "type": "text",
-        "value": "1rem",
+        "value": "1.25rem",
         "editable": true,
         "tab": "sizes",
         "block": "fontSizes"
@@ -287,7 +287,7 @@
           "de-DE": "Schriftgröße klein"
         },
         "type": "text",
-        "value": "0.75rem",
+        "value": "1rem",
         "editable": true,
         "tab": "sizes",
         "block": "fontSizes"
