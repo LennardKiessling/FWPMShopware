@@ -69,6 +69,12 @@
           "en-GB": "Sizes Header",
           "de-DE": "Header Größen"
         }
+      },
+      "color-settings": {
+        "footer-colors": {
+          "en-GB": "Footer Colors",
+          "de-DE": "Farben Footer"
+        }
       }
     },
 
@@ -121,7 +127,7 @@
         "type": "color",
         "value": "lightgrey",
         "editable": true,
-        "tab": "color"
+        "tab": "colors"
       },
       "checkout-background-color": {
         "label":{
@@ -131,7 +137,7 @@
         "type": "color",
         "value": "#E8E8E8",
         "editable": true,
-        "tab": "color"
+        "tab": "colors"
       },
       "checkout-background-elements-color": {
         "label":{
@@ -141,7 +147,7 @@
         "type": "color",
         "value": "#f9f9f9",
         "editable": true,
-        "tab": "color"
+        "tab": "colors"
       },
       "border-radius-checkout": {
         "label":{
@@ -176,22 +182,22 @@
       "account-card-title-background-color": {
         "label":{
           "en-GB": "Title background color of the Account Cards",
-          "de-DE": "Titel-Hintergrundfrabe der Account Kartenabschnitte"
+          "de-DE": "Titel-Hintergrundfarbe der Account Kartenabschnitte"
         },
         "type": "color",
         "value": "#E8E8E8",
         "editable": true,
-        "tab": "color"
+        "tab": "colors"
       },
       "account-card-background-color": {
         "label":{
           "en-GB": "Background color of the Account Cards",
-          "de-DE": "Hintergrundfrabe der Account Kartenabschnitte"
+          "de-DE": "Hintergrundfarbe der Account Kartenabschnitte"
         },
         "type": "color",
         "value": "#E8E8E8",
         "editable": true,
-        "tab": "color"
+        "tab": "colors"
       },
       "LFL-h1-font-size": {
         "label":{
@@ -355,6 +361,28 @@
         "value": "true",
         "editable": true,
         "tab": "header-settings"
+      },
+      "footer-background-color": {
+        "label":{
+          "en-GB": "Background color of the Footer",
+          "de-DE": "Hintergrundfarbe des Footers"
+        },
+        "type": "color",
+        "value": "#000000",
+        "editable": true,
+        "tab": "colors",
+        "block": "footer-colors"
+      },
+      "footer-font-color": {
+        "label":{
+          "en-GB": "Font Color of the Footer",
+          "de-DE": "Schriftfarbe des Footers"
+        },
+        "type": "color",
+        "value": "#f9f9f9",
+        "editable": true,
+        "tab": "colors",
+        "block": "footer-colors"
       }
     }
   }

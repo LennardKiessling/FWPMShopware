@@ -6,6 +6,7 @@ Contains custom skin styles for the footer located at the bottom of the page.
 
 .footer-main {
     border-top: 1px solid $border-color;
+    background: $footer-background-color;
 }
 
 .footer-column {
@@ -13,17 +14,32 @@ Contains custom skin styles for the footer located at the bottom of the page.
 }
 
 .footer-column-headline {
-    color: $primary;
+    color: $footer-font-color;
     font-size: $font-size-lg;
     font-weight: $font-weight-bold;
 }
 
 .footer-link {
-    color: $body-color;
+    color: $footer-font-color;
 
     &:hover {
-        color: $primary;
-        text-decoration: none;
+        color: $footer-font-color;
+        text-decoration: underline;
+    }
+
+    p {
+        color: $footer-font-color;
+    }
+}
+
+p.footer-contact-hotline, .footer-vat p, .footer-vat a {
+    color: $footer-font-color;
+}
+
+.footer-contact-form {
+    color: $footer-font-color;
+    a {
+        color: $footer-font-color;
     }
 }
 
@@ -36,7 +52,7 @@ Contains custom skin styles for the footer located at the bottom of the page.
 }
 
 .footer-bottom {
-    background: $gray-100;
+    background: $footer-background-color;
 }
 
 .footer-service-menu-item {
@@ -49,7 +65,7 @@ Contains custom skin styles for the footer located at the bottom of the page.
 }
 
 .footer-service-menu-link {
-    color: inherit;
+    color: $footer-font-color;
 }
 
 @include media-breakpoint-up(md) {
