@@ -153,3 +153,52 @@ Extends the basic offcanvas component with additional cart styles.
         }
     }
 }
+
+@include media-breakpoint-up(lg) {
+    .offcanvas.offcanvas-end.cart-offcanvas {
+        width: $width-offcanvas-cart;
+        border-top-left-radius: $border-radius-product-box;
+        border-bottom-left-radius: $border-radius-product-box;
+    }
+    .offcanvas.offcanvas-end.cart-offcanvas .offcanvas-header .btn {
+        border-top-left-radius: $border-radius-product-box;
+    }
+    .offcanvas.offcanvas-end.cart-offcanvas .offcanvas-header{
+        border-top-left-radius: $border-radius-product-box;
+    }
+    .offcanvas.offcanvas-end.cart-offcanvas .row .line-item-row, .card-body .row .line-item-row{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .offcanvas.offcanvas-end.cart-offcanvas .line-item-info-img {
+        height: $height-item-offcanvas-cart;
+        img {
+            height: 100%;
+            border: none;
+        }
+    }
+
+    .card-body .line-item-info-img {
+        height: fit-content;
+        img {
+            height: 100%;
+            border: none;
+        }
+    }
+
+    .offcanvas.offcanvas-end.cart-offcanvas .line-item-img-container, .card-body .line-item-img-container{
+        width: $width-images-offcanvas-cart;
+    }
+
+    .offcanvas.offcanvas-end.cart-offcanvas .is-offcanvas .line-item-quantity-label {
+        width: 15%;
+    }
+
+    .offcanvas.offcanvas-end.cart-offcanvas .is-offcanvas .line-item-quantity-select-wrapper {
+        width: 25%;
+    }
+
+    .offcanvas.offcanvas-end.cart-offcanvas .row .line-item-quantity-row{
+        justify-content: flex-end;
+    }
+}

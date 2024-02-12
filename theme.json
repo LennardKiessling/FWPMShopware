@@ -535,6 +535,36 @@
         "editable": true,
         "tab": "header-settings",
         "block": "uvp-colors"
+      },
+      "height-item-offcanvas-cart": {
+        "label":{
+          "en-GB": "Height of the Item in Cart off Canvas",
+          "de-DE": "Höhe der Artikel im Warenkorb off canvas"
+        },
+        "type": "text",
+        "value": "230px",
+        "editable": true,
+        "tab": "sizes"
+      },
+      "width-images-offcanvas-cart": {
+        "label":{
+          "en-GB": "Width of the Images in Cart off Canvas",
+          "de-DE": "Breite der Bilder im Warenkorb off canvas"
+        },
+        "type": "text",
+        "value": "220px",
+        "editable": true,
+        "tab": "sizes"
+      },
+      "width-offcanvas-cart": {
+        "label":{
+          "en-GB": "Width of the Images in Cart off Canvas",
+          "de-DE": "Breite der Bilder im Warenkorb off canvas"
+        },
+        "type": "text",
+        "value": "700px",
+        "editable": true,
+        "tab": "sizes"
       }
     }
   }
