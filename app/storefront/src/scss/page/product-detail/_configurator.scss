@@ -45,7 +45,7 @@
     }
 
  **/   
-    // eigene Klasse für Runde Buttons
+    // Anpassung der Klasse für Runde Buttons
     + .product-detail-configurator-option-label {
         align-items: center;
         cursor: pointer;
@@ -75,7 +75,7 @@
     }
 **/
 
-    // eigene Klasse keine Border für nicht ausgewählte
+    // keine Border für nicht ausgewählte
     &.is-combinable + .product-detail-configurator-option-label{
         opacity: 1;
         border: transparent;
