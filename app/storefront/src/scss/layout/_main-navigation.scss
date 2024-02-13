@@ -48,6 +48,7 @@ https://getbootstrap.com/docs/5.2/components/navs-tabs
     nav:first-of-type.nav.main-navigation-menu.main .active {
         background: $background-color-main-navigation-active;
         color: $font-color-main-navigation-active;
+        border-radius: $btn-border-radius;
     }
 
     .sub a.nav-link.main-navigation-link {

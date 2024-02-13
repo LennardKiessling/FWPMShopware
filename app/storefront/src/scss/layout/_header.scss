@@ -127,9 +127,14 @@ The header contains the shop logo, the search form and various actions like the 
         justify-content: space-around;
         background: $uvp-background-color;
         color: $uvp-font-color;
-        & .icon {
+        padding-bottom: 3px;
+        font-size: 14px;
+        font-family: monospace;
+        .icon {
             color: $uvp-font-color;
             margin-right: 5px;
+            height: 15px;
+            width: 15px;
         }
     }
 }
