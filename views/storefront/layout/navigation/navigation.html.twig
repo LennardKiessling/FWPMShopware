@@ -28,8 +28,15 @@
 
                         {% block layout_main_navigation_menu_items %}
                             {% set activePath = page.header.navigation.active.path %}
+                            {% set activePathIdSplit = page.header.navigation.active.path|split('|') %}
+                            {% set activePathId = page.header.navigation.active.id %}
 
+
+
+                            <!--  -->
+                            {{ dump (page.header.navigation) }}
                             {% for treeItem in page.header.navigation.tree %}
+                            
                                 {% set category = treeItem.category %}
                                 {% set name = category.translated.name %}
 
@@ -58,6 +65,67 @@
                                     {% endif %}
                                 {% endblock %}
                             {% endfor %}
+                            {% for treeItem in page.header.navigation.tree %}
+                            
+                                {% set category = treeItem.category %}
+                                {% set name = category.translated.name %}
+
+                                    {% if category.id == activePathIdSplit[2] %}
+                                            {% for children in treeItem.children %}
+                                                {% set category = children.category %}
+                                                {% set name = category.translated.name %}
+                                                {% if category.type == 'folder' %}
+                                                    <div class="nav-link main-navigation-link"
+                                                    {% if children.children|length > 0 %}
+                                                        data-flyout-menu-trigger="{{ category.id }}"
+                                                    {% endif %}
+                                                    title="{{ name }}">
+                                                    <div class="main-navigation-link-text">
+                                                        <span itemprop="name">{{ name }}</span>
+                                                    </div>
+                                                </div>
+                                                {% else %}
+                                                    <a class="nav-link main-navigation-link{% if category.id == page.header.navigation.active.id or category.id in activePath %} active{% endif %}"
+                                                    href="{{ category_url(category) }}"
+                                                    itemprop="url"
+                                                    {% if children.children|length > 0 %}data-flyout-menu-trigger="{{ category.id }}"{% endif %}
+                                                {% if category_linknewtab(category) %}target="_blank"{% endif %}
+                                                title="{{ name }}">
+                                                <div class="main-navigation-link-text">
+                                                <span itemprop="name">{{ name }}</span>
+                                                </div>
+                                                </a>
+                                                {% endif %}
+                                            {% endfor %}
+                                    {% elseif category.id == activePathId %}
+                                        {% for children in treeItem.children %}
+                                            {% set category = children.category %}
+                                            {% set name = category.translated.name %}
+                                            {% if category.type == 'folder' %}
+                                            <div class="nav-link main-navigation-link"
+                                            {% if children.children|length > 0 %}
+                                            data-flyout-menu-trigger="{{ category.id }}"
+                                            {% endif %}
+                                            title="{{ name }}">
+                                            <div class="main-navigation-link-text">
+                                            <span itemprop="name">{{ name }}</span>
+                                            </div>
+                                            </div>
+                                            {% else %}
+                                            <a class="nav-link main-navigation-link{% if category.id == page.header.navigation.active.id or category.id in activePath %} active{% endif %}"
+                                            href="{{ category_url(category) }}"
+                                            itemprop="url"
+                                            {% if children.children|length > 0 %}data-flyout-menu-trigger="{{ category.id }}"{% endif %}
+                                            {% if category_linknewtab(category) %}target="_blank"{% endif %}
+                                            title="{{ name }}">
+                                            <div class="main-navigation-link-text">
+                                            <span itemprop="name">{{ name }}</span>
+                                            </div>
+                                            </a>
+                                            {% endif %}
+                                        {% endfor %}                                                                       
+                                    {% endif %}
+                            {% endfor %}
                         {% endblock %}
                     </nav>
                 {% endblock %}
@@ -67,7 +135,7 @@
         {% block layout_main_navigation_menu_flyout_wrapper %}
             {% set navigationChildrenCount = 0 %}
             {% for treeItem in page.header.navigation.tree %}
-                {% if treeItem.category.childCount > 0 %}
+                {% if treeItem.category.childCount >= 0 %}
                     {% set navigationChildrenCount = navigationChildrenCount + 1 %}
                 {% endif %}
             {% endfor %}
@@ -89,6 +157,20 @@
                                         </div>
                                     {% endblock %}
                                 {% endif %}
+                            {% endfor %}
+                            {% for treeItem in page.header.navigation.tree %}
+                                {% for children in treeItem.children %}
+                                {% if category.id == activePathIdSplit[2] %}
+                                    {% if children.children|length > 0 %}
+                                            <div class="navigation-flyout"
+                                                data-flyout-menu-id="{{ children.category.id }}">
+                                                <div class="container">
+                                                        {% sw_include '@Storefront/storefront/layout/navigation/flyout.html.twig' with {navigationTree: children, level: level+1, page: page} only %}
+                                                </div>
+                                            </div>
+                                    {% endif %}
+                                {% endif %}
+                                {% endfor %}
                             {% endfor %}
                         {% endblock %}
                     </div>
