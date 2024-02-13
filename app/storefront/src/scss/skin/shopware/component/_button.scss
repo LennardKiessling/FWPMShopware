@@ -14,6 +14,12 @@ https://getbootstrap.com/docs/5.2/components/buttons
     border-radius: $btn-border-radius;
 }
 
+.startseite-button .btn.btn-primary {
+
+    font-size: 30px;
+    
+}
+
 // custom add to cart button, used e.g. in product-box and product detail buybox
 .btn-buy {
     @extend .btn-lg;

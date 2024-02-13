@@ -12,7 +12,14 @@ https://getbootstrap.com/docs/5.2/components/card
     font-size: $font-size-lg;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
-    background-color: $account-card-title-background-color;
+}
+
+.is-ctl-accountprofile,.is-ctl-address,.is-ctl-accountpayment,.is-ctl-accountorder {
+& .card-col .card-body{
+    background-color: $account-card-background-color;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 }
 
 // equal height cards
@@ -22,14 +29,37 @@ https://getbootstrap.com/docs/5.2/components/card
 
     .card {
         width: 100%;
-        background-color: $account-card-background-color;
     }
 
     .card-body {
         display: flex;
         flex-direction: column;
         border-radius: $card-border-radius;
+        background-color: $account-card-background-color;
     }
+}
+
+.is-ctl-accountprofile,.is-ctl-address,.is-ctl-accountpayment,.is-ctl-accountorder {
+& .card-body p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+& .card-body strong{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+& .card-body .address{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+& .card-body form{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
 }
 
 .card-actions {
