@@ -14,8 +14,7 @@ https://getbootstrap.com/docs/5.2/components/navs-tabs
 @include media-breakpoint-up(md) {
     .main-navigation-link {
         color: $body-color;
-        padding-left: 0;
-        padding-right: 32px;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
 
         .main-navigation-link-text {
             border-bottom: 2px solid transparent;

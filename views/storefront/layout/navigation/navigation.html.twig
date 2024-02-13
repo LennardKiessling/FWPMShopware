@@ -6,7 +6,7 @@
         {% block layout_main_navigation_navbar %}
             <div class="container">
                 {% block layout_main_navigation_menu %}
-                    <nav class="nav main-navigation-menu"
+                    <nav class="nav main-navigation-menu main"
                         itemscope="itemscope"
                         itemtype="http://schema.org/SiteNavigationElement">
                         {% set homeLabel = context.salesChannel.translated.homeName|default("general.homeLink"|trans) %}
@@ -61,6 +61,10 @@
                                     {% endif %}
                                 {% endblock %}
                             {% endfor %}
+                            </nav>
+                            <nav class="nav main-navigation-menu sub"
+                            itemscope="itemscope"
+                            itemtype="http://schema.org/SiteNavigationElement">
                             {% for treeItem in page.header.navigation.tree %}
                             
                                 {% set category = treeItem.category %}
@@ -141,31 +145,21 @@
                     <div class="navigation-flyouts">
                         {% block layout_main_navigation_menu_flyouts %}
                             {% for treeItem in page.header.navigation.tree %}
-                                {% if treeItem.children|length > 0 %}
-                                    {% block layout_main_navigation_menu_flyout %}
-                                        <div class="navigation-flyout"
-                                             data-flyout-menu-id="{{ treeItem.category.id }}">
-                                            <div class="container">
-                                                {% block layout_main_navigation_menu_flyout_include %}
-                                                    {% sw_include '@Storefront/storefront/layout/navigation/flyout.html.twig' with {navigationTree: treeItem, level: level+1, page: page} only %}
-                                                {% endblock %}
-                                            </div>
-                                        </div>
-                                    {% endblock %}
-                                {% endif %}
-                            {% endfor %}
-                            {% for treeItem in page.header.navigation.tree %}
                                 {% for children in treeItem.children %}
-                                {% if category.id == activePathIdSplit[2] %}
-                                    {% if children.children|length > 0 %}
-                                            <div class="navigation-flyout"
-                                                data-flyout-menu-id="{{ children.category.id }}">
-                                                <div class="container">
-                                                        {% sw_include '@Storefront/storefront/layout/navigation/flyout.html.twig' with {navigationTree: children, level: level+1, page: page} only %}
+                                    {% if (category.id == activePathIdSplit[2] or category.id == activePathId) %}
+                                        {% if children.children|length > 0 %}
+                                            {% block layout_main_navigation_menu_flyout %}
+                                                <div class="navigation-flyout"
+                                                    data-flyout-menu-id="{{ children.category.id }}">
+                                                    <div class="container">
+                                                        {% block layout_main_navigation_menu_flyout_include %}
+                                                            {% sw_include '@Storefront/storefront/layout/navigation/flyout.html.twig' with {navigationTree: children, level: level+1, page: page} only %}
+                                                        {% endblock %}
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            {% endblock %}
+                                        {% endif %}
                                     {% endif %}
-                                {% endif %}
                                 {% endfor %}
                             {% endfor %}
                         {% endblock %}

@@ -4,6 +4,7 @@
 @import 'skin/shopware/component/product-box';
 @import 'skin/shopware/component/_button.scss';
 @import 'skin/shopware/component/_card.scss';
+@import 'component/_card.scss';
 @import 'page/checkout/_checkout.scss';
 @import 'page/product-detail/_configurator.scss';
 @import 'abstract/variables/_custom.scss';
@@ -14,3 +15,5 @@
 @import 'component/_sorting.scss';
 @import 'component/_filter-panel.scss';
 @import 'layout/_offcanvas-cart.scss';
+@import 'page/account/_account.scss';
+@import 'skin/shopware/layout/_main-navigation.scss';
