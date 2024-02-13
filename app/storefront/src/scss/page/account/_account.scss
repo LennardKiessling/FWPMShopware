@@ -1,3 +1,16 @@
+.is-ctl-accountprofile,.is-ctl-address,.is-ctl-accountpayment,.is-ctl-accountorder{
+
+ background-color: $account-general-background-color;
+
+}
+.is-ctl-accountprofile,.is-ctl-address,.is-ctl-accountpayment,.is-ctl-accountorder{
+& .card,.account-profile-personal{
+
+    background-color: $account-general-background-color;
+
+}
+}
+
 .account-content {
     @extend .row;
 
@@ -11,6 +24,36 @@
         @extend .offset-xl-1;
         @extend .col-xl-9;
     }
+}
+
+.account-profile-personal form,.js-newsletter-wrapper form {
+
+    background-color: $account-card-background-color;
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+}
+
+.card.account-profile-credentials {
+
+    background-color: $account-card-background-color;
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.account-payment-card.card form {
+
+    background-color: $account-card-background-color;
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+
+}
+
+.list-group.list-group-flush.account-aside-list-group{
+
+        border-radius: $card-border-radius;
+
 }
 
 .account-recover-password-info {

@@ -199,6 +199,16 @@
           "de-DE": "Hintergrundfarbe der Account Kartenabschnitte"
         },
         "type": "color",
+        "value": "#f9f9f9",
+        "editable": true,
+        "tab": "colors"
+      },
+      "account-general-background-color": {
+        "label":{
+          "en-GB": "Background color of the Account Interface",
+          "de-DE": "Hintergrundfarbe des Accountbereichs"
+        },
+        "type": "color",
         "value": "#E8E8E8",
         "editable": true,
         "tab": "colors"
