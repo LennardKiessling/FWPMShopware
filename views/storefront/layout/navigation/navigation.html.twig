@@ -31,10 +31,6 @@
                             {% set activePathIdSplit = page.header.navigation.active.path|split('|') %}
                             {% set activePathId = page.header.navigation.active.id %}
 
-
-
-                            <!--  -->
-                            {{ dump (page.header.navigation) }}
                             {% for treeItem in page.header.navigation.tree %}
                             
                                 {% set category = treeItem.category %}
